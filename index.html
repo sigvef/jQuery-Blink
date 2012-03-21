@@ -6,17 +6,19 @@
         <script src="jQueryBlink.js"></script>
         <script>
         $(function(){
-            $('#ex-default').jqueryblink();
-            $('#ex-time').jqueryblink(400);
-            $('#ex-data-speed').jqueryblink();
+            $('#ex-default').blink();
+            $('#ex-time').blink(400);
+            $('#ex-data-speed').blink();
         });
         </script>
     </head>
     <body>
+        <h1>jQuery Blink</h1>
+        <p>jQuery Blink is a reimplementation of the old-school blink tag in modern jQuery.
         <dl>
-            <dt>$("element").jqueryblink()</dt><dd id="ex-default">Element.</dd>
-            <dt>$("element").jqueryblink(400)</dt><dd id="ex-time">Element.</dd>
-            <dt>$("element").jqueryblink()</dt><dd id="ex-data-speed" data-speed="600">Element.</dd>
+            <dt>$(element).blink()</dt><dd id="ex-default">Default blinking.</dd>
+            <dt>$(element).blink(400)</dt><dd id="ex-time">Custom blink time.</dd>
+            <dt>$(element).blink() //with speed data as a tag attribute</dt><dd id="ex-data-speed" data-speed="600">Custom blink time as data attribute.</dd>
     </dl>
     </body>
 </html>
