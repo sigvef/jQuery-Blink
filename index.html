@@ -6,11 +6,17 @@
         <script src="jQueryBlink.js"></script>
         <script>
         $(function(){
-            $('blink').jqueryblink(100);
+            $('#ex-default').jqueryblink();
+            $('#ex-time').jqueryblink(400);
+            $('#ex-data-speed').jqueryblink();
         });
         </script>
     </head>
     <body>
-        <blink> DAT BLINKR.NET</blink>
+        <dl>
+            <dt>$("element").jqueryblink()</dt><dd id="ex-default">Element.</dd>
+            <dt>$("element").jqueryblink(400)</dt><dd id="ex-time">Element.</dd>
+            <dt>$("element").jqueryblink()</dt><dd id="ex-data-speed" data-speed="600">Element.</dd>
+    </dl>
     </body>
 </html>
